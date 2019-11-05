@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>BMW Cars</title>
+	<link rel="shortcut icon" type="image/jpg" href="images/bmwlogo.jpg">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/feedback.css">
+</head>
+
+<body>
+	<header>
+		<a href="index.html"><img src="images/bmw-logo.jpg" alt="BMW logo" height="80" width="150"></a>
+		<h2>BMW Cars</h2>
+		<h3><span class="shadow">Welcome to world of Cars</span></h3>
+	</header>
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="index.html" class="current">Home</a></li>
+        	<li><a href="#" class="current">Models</a>
+				<ul>
+                	<li><a href="#">BMW 3 Series</a></li>
+                	<li><a href="#">BMW 4 Series</a>
+						<ul>
+							<li><a href="#">BMW 4 Series Coupé</a></li>
+							<li><a href="#">BMW 4 Series Cabriolet</a></li>
+							<li><a href="#">BMW 4 Series Gran Coupé</a></li>
+						</ul>
+					</li>	
+                	<li><a href="#">BMW 5 Series</a>
+						<ul>
+							<li><a href="#">BMW 530e plug-in hybrid</a></li>
+							<li><a href="#">BMW M550i xDrive Sedan</a></li>
+							<li><a href="#">BMW 5 Series Sedan</a></li>
+						</ul>
+					</li>
+					
+            	</ul>
+			</li>
+        	<li><a href="luncheons.html" class="current">other models</a>
+				<ul>
+                	<li><a href="#">BMW 7 Series</a></li>
+                	<li><a href="#">BMW 4 Series M-package</a></li>
+                	<li><a href="#">BMW 5 Series</a></li>
+            	</ul>
+			</li>
+        	<li><a href="feedback.html" class="current">feedback</a></li>
+        	<li><a href="aboutUs.html" class="current"> About Us</a>
+        	</li>
+    	</ul>
+	</nav>
+	<main>
+		<aside id="asideLeft">
+				<h2>Cars</h2>
+				<h3>BMW 3 Series</h3>
+				<img src="images/2019-bmw-3-series.jpg" alt="BMW 3series" height="80">
+				<h3>BMW 4 Series</h3>
+				<img src="images/BMW4series.jpg" alt="BMW4series" height="80">
+				<h3>BMW 5 Series</h3>
+				<img src="images/BMW5series.jpg" alt="BMW5series" height="80">
+				<h3>BMW 7 Series</h3>
+				<img src="images/BMW 7 series.jpg" alt="BMW 7 series" height="80">
+			</aside>
+			
+			<div id="secDiv">
+				<section>
+					<h1>Feedback Form</h1>
+					<form action="register_account.html" method="get"
+						name="registration_form" id="registration_form">
+						<fieldset>
+							<legend>Visitor Information</legend>
+							
+							<label for="first_name">First Name:</label>
+							<input type="text" name="first_name" id="first_name" required><br>
+							
+							<label for="email">E-Mail:</label>
+							<input type="email" name="email" id="email" autofocus required><br>
+							
+							
+						</fieldset>
+						<fieldset>
+							<legend>model</legend>
+							<label for="order_type"> BMW Model:</label>
+							<select name="order_type" id="order_type">
+								<option value="m">BMW 3 series</option>
+								<option value="d">BMW 4 series</option>            
+								<option value="s">BMW 5 series</option>
+								<option value="s">BMW 7 series</option>
+							</select><br>
+						</fieldset>
+						<fieldset>
+							<label id="review" for="order_type">Review Here</label><br>
+							<textarea rows="7" cols="50"></textarea>
+						</fieldset>
+						
+						<fieldset id="buttons">
+							<legend>Submit Feedback</legend>
+							<label>&nbsp;</label>
+							<button onclick="myFunction()" type="submit" id="submit" value="Submit">Submit</button>
+								<script>
+								function myFunction(){
+									alert("The form has been Submitted");
+								}
+								</script>
+							
+							<input type="reset" id="reset" value="Reset Fields"><br>
+						</fieldset>
+					</form>
+				</section>
+				
+				<aside id="asideRight">
+					<h2>Sports Cars</h2>
+					
+					<fieldset id="radio">
+							<legend>Will u visit again</legend>
+							<input type="radio" name="payment_type" id="bill" value="bill">
+							<label for="bill">Yes</label>
+							<input type="radio" name="payment_type" id="credit" value="credit">
+							<label for="credit">No</label>
+					</fieldset>
+				</aside>
+			</div>
+	</main>
+	<footer>
+		<p>&copy; BMW Automobiles.CA </p>
+	</footer>
+</body>
+</html>
