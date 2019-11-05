@@ -1,0 +1,207 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: black;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-color: steelblue;
+    margin: 0 auto;
+    border: 3px solid black;
+	
+	/*background-image: url(../images/Lord_s.jpeg);*/
+	
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+/* the styles for the header */
+header {
+	padding: 1.5em 0 4em 0;
+	border-bottom: 3px solid black;
+	
+	background-image: -moz-linear-gradient(
+	    30deg, steelblue 0%, steelblue 30%, steelblue 50%, steelblue 80%, steelblue 100%);
+	background-image: -webkit-linear-gradient(
+	    30deg, darkgrey 0%, darkgrey 30%, steelblue 50%, darkgrey 80%, darkgrey 100%);
+	background-image: -o-linear-gradient(
+	    30deg, darkgrey 0%, darkgrey 30%, steelblue 50%, darkgrey 80%, darkgrey 100%);
+	background-image: linear-gradient(
+	    30deg, darkgrey 0%, darkgrey 30%, steelblue 50%, darkgrey 80%, darkgrey 100%);
+}
+header h2 {
+	font-size: 175%;
+	color: Black;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+	font-weight:bold
+}
+header img {
+	float: left;
+	padding: 0 30px;
+}
+.shadow {
+	text-shadow: 2px 2px 2px steelblue;
+}
+
+
+
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 268.5px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: steelblue;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul ul {
+    position: absolute;
+    top: 0%;
+	left:100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+/* the styles for the main content */
+main {
+	clear: left;
+}
+
+/* the styles for the section */
+
+#secDiv{
+	float: right;
+}
+
+section {
+	color: black;
+	border-left: 1px solid black;
+	width: 970px;
+	float: left;
+	padding: 20px 20px 20px 20px;
+	border-right: 1px solid black;
+}
+
+section h2 {
+	color: #800000;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+section p {
+	padding-bottom: .5em;
+}
+
+/* the styles for the article */
+
+
+/* the styles for the aside */
+#asideLeft {
+	width: 150px;
+	float: left;
+	padding: 0 0 20px 10px;
+}
+#asideLeft h2 {
+	color: steelblue;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+
+#asideLeft h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+#asideLeft img {
+	padding-bottom: 0em;
+	border: 1px solid black;
+	
+}
+
+
+
+#asideRight {
+	width: 150px;
+	float: right;
+	padding: 0 0 20px 20px;
+}
+#asideRight h2 {
+	color: steelblue;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+
+#asideRight h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+#asideRight img {
+	padding-bottom: 0em;
+	border: 1px solid black;
+	
+}
+
+
+/* the styles for the footer */
+footer {
+	background-color: black;
+	clear: both;
+
+}
+footer p {
+	text-align: center;
+	color: steelblue;
+	padding: 1em 0;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius:5px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 12px;
+}
+
+tr:nth-child(even) {
+  background-color: #1bc2a2;
+color:#fff;
+}
